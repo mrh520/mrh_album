@@ -1,0 +1,547 @@
+学校Id:172, 学校名:北京师范大学庆阳附属中学
+UserName:18070642
+2019-04-04 18:53:28
+Could not execute query: select suggestion0_.Id as Id217_, suggestion0_.Code as Code217_, suggestion0_.Name as Name217_, suggestion0_.CreatedTime as CreatedT4_217_, suggestion0_.LastUpdatedTime as LastUpda5_217_, suggestion0_.Version as Version217_, suggestion0_.Content as Content217_, suggestion0_.CreatorId as CreatorId217_, suggestion0_.CreatedName as CreatedN9_217_, suggestion0_.Status as Status217_, suggestion0_.Attachments as Attachm11_217_, suggestion0_.ReplyId as ReplyId217_, suggestion0_.ReplyName as ReplyName217_, suggestion0_.ReplyContent as ReplyCo14_217_, suggestion0_.CreatorGroupName as Creator15_217_, suggestion0_.SuggestionType as Suggest16_217_, suggestion0_.ReplyTime as ReplyTime217_ from SSC_Suggestion suggestion0_ order by suggestion0_.CreatedTime, Reply limit ?p0
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'Reply' in 'order clause'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2019-04-04 18:53:28
+Unknown column 'Reply' in 'order clause'
+2019-04-04 18:53:28
+Unknown column 'Reply' in 'order clause'
+2019-04-04 18:53:28
+Unknown column 'Reply' in 'order clause'
+2019-04-04 18:53:28
+could not execute query
+[ select suggestion0_.Id as Id217_, suggestion0_.Code as Code217_, suggestion0_.Name as Name217_, suggestion0_.CreatedTime as CreatedT4_217_, suggestion0_.LastUpdatedTime as LastUpda5_217_, suggestion0_.Version as Version217_, suggestion0_.Content as Content217_, suggestion0_.CreatorId as CreatorId217_, suggestion0_.CreatedName as CreatedN9_217_, suggestion0_.Status as Status217_, suggestion0_.Attachments as Attachm11_217_, suggestion0_.ReplyId as ReplyId217_, suggestion0_.ReplyName as ReplyName217_, suggestion0_.ReplyContent as ReplyCo14_217_, suggestion0_.CreatorGroupName as Creator15_217_, suggestion0_.SuggestionType as Suggest16_217_, suggestion0_.ReplyTime as ReplyTime217_ from SSC_Suggestion suggestion0_ order by suggestion0_.CreatedTime, Reply limit ?p0 ]
+[SQL: select suggestion0_.Id as Id217_, suggestion0_.Code as Code217_, suggestion0_.Name as Name217_, suggestion0_.CreatedTime as CreatedT4_217_, suggestion0_.LastUpdatedTime as LastUpda5_217_, suggestion0_.Version as Version217_, suggestion0_.Content as Content217_, suggestion0_.CreatorId as CreatorId217_, suggestion0_.CreatedName as CreatedN9_217_, suggestion0_.Status as Status217_, suggestion0_.Attachments as Attachm11_217_, suggestion0_.ReplyId as ReplyId217_, suggestion0_.ReplyName as ReplyName217_, suggestion0_.ReplyContent as ReplyCo14_217_, suggestion0_.CreatorGroupName as Creator15_217_, suggestion0_.SuggestionType as Suggest16_217_, suggestion0_.ReplyTime as ReplyTime217_ from SSC_Suggestion suggestion0_ order by suggestion0_.CreatedTime, Reply limit ?p0]
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   at NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   at NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   at NHibernate.Impl.QueryImpl.List[T]()
+   at BNDS.Runtime.Data.DaoBase`1.GetListPaing(Int32 pageIndex, Int32 pageSize, String selectFields, String entityName, String whereExpr, IDbDataParameter[] parameters, String orderExpr)
+   at BNDS.Runtime.Biz.ServiceBase`1.GetListPaing(Int32 pageIndex, Int32 pageSize, String selectFields, String entityName, String whereExpr, IDbDataParameter[] parameters, String orderExpr)
+   at _dynamic_BNDS.Runtime.Biz.ServiceBase`1[[BNDS.IDSP.SSC.Entity.Suggestion, BNDS.IDSP.SSC.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]].GetListPaing(Object , Object[] )
+   at Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   at Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at BNDS.Runtime.DbLocator.ConnectionStringAdvice.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   at CompositionAopProxy_2c461a82283f43cd99e1bf670da3852d.GetListPaing(Int32 pageIndex, Int32 pageSize, String selectFields, String entityName, String whereExpr, IDbDataParameter[] parameters, String orderExpr)
+   at BNDS.Runtime.WebUI.Controllers.BasePagedTGListController`1.GetPagingData(Int32 pageIndex, Int32 pageSize, String selectFields, String entityNames, String filter, String orderExpr, IDbDataParameter[] parameters)
+   at BNDS.Runtime.WebUI.Controllers.BasePagedTGListController`1.LoadData()
+   at BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetDataData()
+   at BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetData()
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
+   
+   
+   2019-04-08 09:19:35
+Could not synchronize database state with session
+NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [BNDS.IDSP.CP.Entity.CPStudentScore#e03d734d-e5ac-4e98-8304-bb7f3c3f9cc7]
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   2019-04-08 11:19:15
+The parameters dictionary contains a null entry for parameter 'gradeId' of non-nullable type 'System.Guid' for method 'System.Web.Mvc.ActionResult GetSubjectsByGradeIdAndSP(System.Guid, System.Guid, System.String)' in 'BNDS.IDSP.WebPortal.Areas.api.Controllers.EvalController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   at System.Web.Mvc.ReflectedActionDescriptor.<>c__DisplayClass1.<Execute>b__0(ParameterInfo parameterInfo)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+UserName:
+
+
+
+
+UserName:13010422
+2019-04-08 15:29:06
+Got error 'empty (sub)expression' from regexp
+   at BNDS.Runtime.Data.DaoBase`1.Execute[T](Func`2 func, String cmdText, CommandType cmdType, IDbDataParameter[] parameters)
+   at BNDS.Runtime.Data.DaoBase`1.GetDataSet(String cmdText, CommandType cmdType, IDbDataParameter[] parameters)
+   at BNDS.IDSP.Eval.Data.CourseEvalDao.GetCourseEvalsByCourseIdAndGradeIds(String gradeIds, Guid courseId)
+   at BNDS.IDSP.Eval.Service.CourseEvalService.GetCourseEvalsByCourseIdAndGradeIds(String gradeIds, Guid courseId)
+   at _dynamic_BNDS.IDSP.Eval.Service.CourseEvalService.GetCourseEvalsByCourseIdAndGradeIds(Object , Object[] )
+   at Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   at Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at BNDS.Runtime.DbLocator.ConnectionStringAdvice.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   at CompositionAopProxy_d92082bd08314498bc4e96e3a2702f74.GetCourseEvalsByCourseIdAndGradeIds(String gradeIds, Guid courseId)
+   at BNDS.IDSP.WebPortal.Areas.Eval.Controllers.CourseEvalTGController.BeforePersisit(CourseEval entity, ListDictionary propertyList, ElementChangedType changedType)
+   at BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.FillPropertyData(T entity, ListDictionary propertyList, XElement element)
+   at BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.SaveSingleElement(XElement element)
+   at BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUploadData(String xmlString)
+   at BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUpload()
+   
+   
+   
+  UserName:12060114
+2019-04-07 19:17:53
+146 _ load general config from db at 2019/4/7 19:17:53。
+2019-04-07 20:52:50
+213 _ load general config from db at 2019/4/7 20:52:50。
+2019-04-07 21:23:53
+Could not execute command: UPDATE Eval_ProcessEvalDetail SET CreatedTime = ?p0, LastUpdatedTime = ?p1, VersionNo = ?p2, Index1 = ?p3, Index2 = ?p4, Index3 = ?p5, Index4 = ?p6, Index5 = ?p7, Index6 = ?p8, Index7 = ?p9, Index8 = ?p10, Index9 = ?p11, Index10 = ?p12, Index11 = ?p13, Index12 = ?p14, Index13 = ?p15, Index14 = ?p16, Index15 = ?p17, Index16 = ?p18, Index17 = ?p19, Index18 = ?p20, Index19 = ?p21, Index20 = ?p22, CourseGroupId = ?p23, Remark = ?p24, IndexSum = ?p25, Index_1 = ?p26, Index_2 = ?p27, Index_3 = ?p28, Index_4 = ?p29, Index_5 = ?p30, Index_6 = ?p31, Index_7 = ?p32, Index_8 = ?p33, Index_9 = ?p34, Index_10 = ?p35, Index_11 = ?p36, Index_12 = ?p37, Index_13 = ?p38, Index_14 = ?p39, Index_15 = ?p40, Index_16 = ?p41, Index_17 = ?p42, Index_18 = ?p43, Index_19 = ?p44, Index_20 = ?p45, Item1 = ?p46, Item2 = ?p47, Item3 = ?p48, Item4 = ?p49, Item5 = ?p50, Item6 = ?p51, Item7 = ?p52, Item8 = ?p53, Item9 = ?p54, Item10 = ?p55, Item11 = ?p56, Item12 = ?p57, Item13 = ?p58, Item14 = ?p59, Item15 = ?p60, Item16 = ?p61, Item17 = ?p62, Item18 = ?p63, Item19 = ?p64, Item20 = ?p65, CalculateBadgeCount = ?p66, ExtraBadgeCount = ?p67, Attachments = ?p68, StudentId = ?p69, EvalUnitId = ?p70 WHERE Id = ?p71
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'NaN' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2019-04-07 21:23:53
+Unknown column 'NaN' in 'field list'
+
+
+
+学校Id:104, 学校名:克拉玛依第一中学
+2019-04-04 22:33:20
+Could not execute command: INSERT INTO Csh_GroupSchedule (VersionNo, WhatTime, CourseGroupId, ClassRoomId, Id) VALUES (?p0, ?p1, ?p2, ?p3, ?p4)
+MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '11-5e4876a7-5957-475d-ac49-d8f0ad44ccdb' for key 'idx_csh_gs_wt_cg'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+2019-04-04 22:33:20
+Duplicate entry '11-5e4876a7-5957-475d-ac49-d8f0ad44ccdb' for key 'idx_csh_gs_wt_cg'
+
+
+
+
+2019-04-03 08:46:09
+Redis Timeout expired. The timeout period elapsed prior to obtaining a connection from the pool. This may have occurred because all pooled connections were in use.
+   at ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   at BNDS.IDSP.Library.CacheLib.RedisCachedStrategy.GetObject(String objId, Boolean bNeedConsistence)
+   at BNDS.Runtime.Biz.AuthInfo.ResourceService.GetAllResourcesFromCache(Int32 schoolId, Boolean isSuperAdmin, Boolean isSchoolAdmin, IList`1 roleIds)
+   at _dynamic_BNDS.Runtime.Biz.AuthInfo.ResourceService.GetAllResourcesFromCache(Object , Object[] )
+   at Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   at Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at BNDS.Runtime.DbLocator.ConnectionStringAdvice.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   at CompositionAopProxy_a8743f1657c74111be33b9c2490cf23e.GetAllResourcesFromCache(Int32 schoolId, Boolean isSuperAdmin, Boolean isSchoolAdmin, IList`1 roleIds)
+   at BNDS.Runtime.Biz.AuthInfo.UserService.BuildUserContext(User user)
+   at BNDS.Runtime.Biz.AuthInfo.UserService.autoLogin(User user, String& msg)
+   at BNDS.Runtime.Biz.AuthInfo.UserService.AutoLoginByWxUID(String wxuid, String& msg)
+   at _dynamic_BNDS.Runtime.Biz.AuthInfo.UserService.AutoLoginByWxUID(Object , Object[] )
+   at Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   at Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at BNDS.Runtime.DbLocator.ConnectionStringAdvice.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   at CompositionAopProxy_af8538bfbcaa4675be3c1b53feeda7b0.AutoLoginByWxUID(String wxuid, String& msg)
+   at BNDS.IDSP.API.Service.AccountService.WeChatLogin(String wxuid, String sessionId)
+   at _dynamic_BNDS.IDSP.API.Service.AccountService.WeChatLogin(Object , Object[] )
+   at Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   at Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at BNDS.Runtime.DbLocator.ConnectionStringAdvice.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   at CompositionAopProxy_4cbe8abaf3be494ca1372485294d6265.WeChatLogin(String wxuid, String sessionId)
+   at BNDS.IDSP.WebPortal.Areas.api.Controllers.AccountController.WeChatLogin(String wxuid)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
+   
+   
+   Could not open Hibernate Session for transaction
+   
+   
+   
+   
+   
+   学校Id:108, 学校名:成都市泡桐树中学
+UserName:zz_yujiao
+2019-04-02 14:01:39
+Unknown column 'Subject.Id' in 'where clause'
+   at BNDS.Runtime.Data.DaoBase`1.Execute[T](Func`2 func, String cmdText, CommandType cmdType, IDbDataParameter[] parameters)
+   at BNDS.Runtime.Data.DaoBase`1.GetDataSet(String cmdText, CommandType cmdType, IDbDataParameter[] parameters)
+   at BNDS.IDSP.CP.Data.CPBehaviorPrincipleSummaryDao.GetCPBehaviorPrincipleSummary(String schoolPeriodId, String dataAuthStr, String gradeId, String groupId, DateTime beginTime, DateTime endTime, String studingType)
+   at BNDS.IDSP.CP.Service.CPBehaviorPrincipleSummaryService.GetCPBehaviorPrincipleSummary(String schoolPeriodId, String dataAuthStr, String gradeId, String groupId, DateTime beginTime, DateTime endTime, String studingType)
+   at _dynamic_BNDS.IDSP.CP.Service.CPBehaviorPrincipleSummaryService.GetCPBehaviorPrincipleSummary(Object , Object[] )
+   at Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   at Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at BNDS.Runtime.DbLocator.ConnectionStringAdvice.Invoke(IMethodInvocation invocation)
+   at Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   at Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   at CompositionAopProxy_4a09928f672947bdb2a28fcb3442b6f3.GetCPBehaviorPrincipleSummary(String schoolPeriodId, String dataAuthStr, String gradeId, String groupId, DateTime beginTime, DateTime endTime, String studingType)
+   at BNDS.IDSP.WebPortal.Areas.CP.Controllers.CPBehaviorPrincipleSummaryTGController.LoadData()
+   at BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetDataData()
+   at BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetData()
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
+   
+   
+   学校Id:100, 学校名:北京市十一学校
+UserName:T17021222
+2019-04-03 05:55:41
+External component has thrown an exception.
+   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   at System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromGeneralName(ControllerContext controllerContext, List`1 locations, String name, String controllerName, String areaName, String cacheKey, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClassc.<FindView>b__b(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<>c__DisplayClass1e.<InvokeActionResultWithFilters>b__1b()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
+   
+   2019-04-03 09:10:02
+Unable to connect to the remote server
+   at System.Net.HttpWebRequest.GetResponse()
+   at BNDS.IDSP.WebPortal.Areas.Questionnaire.Controllers.QuestionnaireController.GetRequestValue(String url)
+   at BNDS.IDSP.WebPortal.Areas.Questionnaire.Controllers.QuestionnaireController.MyList()
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+学校Id:170, 学校名:青岛中学
+
+
+学校Id:118, 学校名:实施培训学校
+2019-04-09 15:20:00
+序列不包含任何元素
+   在 System.Linq.Enumerable.Max[TSource](IEnumerable`1 source)
+   在 System.Linq.Enumerable.Max[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   在 BNDS.IDSP.BaseInfos.Service.GradeSectionService.GradeOrderBySerial(GradeSection oldGs, GradeSection newGs)
+   在 BNDS.IDSP.BaseInfos.Service.GradeSectionService.UpdateGradeSection(GradeSection gs)
+   在 _dynamic_BNDS.IDSP.BaseInfos.Service.GradeSectionService.UpdateGradeSection(Object , Object[] )
+   在 Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   在 Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   在 Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   在 Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation)
+   在 Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   在 BNDS.Runtime.DbLocator.ConnectionStringAdvice.Invoke(IMethodInvocation invocation)
+   在 Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   在 Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   在 CompositionAopProxy_2d18482560f640dca69294f4cbe4e44c.UpdateGradeSection(GradeSection gs)
+   在 BNDS.IDSP.WebPortal.Areas.BaseInfos.Controllers.GradeSectionTGController.UpdateGradeSectionInfo(GradeSection section)
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
+   
+   学校Id:168, 学校名:青岛启慧双语学校
+2019-04-09 10:50:44
+未将对象引用设置到对象的实例。
+   在 BNDS.IDSP.WebPortal.Areas.CP.Controllers.BehaviorPrincipleStudentScoreDetailController.GetCourseDetail()
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
+   2019-04-09 07:36:28
+好分数密码修改失败：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BNDS.IDSP.HFS.Service.HFSService.GetHFSUserId(String phone, UserType userType)
+   在 BNDS.IDSP.HFS.Service.HFSService.IsUserMatch(User user, String mobile, String& userId)
+   在 BNDS.IDSP.HFS.Service.HFSService.CanModify(User user, String& userId)
+   在 BNDS.IDSP.HFS.Service.HFSService.ChangePWD(User user, Int32 HFSSchoolId, String newPwd, String oldPwd)
+   
+   
+   2019-04-10 09:27:16
+无法识别的 GUID 格式。
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid..ctor(String g)
+   在 BNDS.IDSP.WebPortal.Areas.BaseInfos.Controllers.TimeTableArrangeActivityTGController.BeforePersisit(TimeTableArrangeActivity entity, ListDictionary propertyList, ElementChangedType changedType)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.FillPropertyData(T entity, ListDictionary propertyList, XElement element)
+   在 BNDS.IDSP.WebPortal.Areas.BaseInfos.Controllers.TimeTableArrangeActivityTGController.SaveSingleElement(XElement element)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUploadData(String xmlString)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUpload()
+ SchoolId:118
+ 
+ 
+ 2019-04-10 10:58:05
+System.ArgumentException: studentId不能为空
+   在 BNDS.IDSP.BaseInfos.Data.CourseGroupDao.GetStudentCourses(Guid studentId, Guid schoolPeriodId, String learnPhrase)
+   在 BNDS.IDSP.BaseInfos.Service.CourseGroupService.GetStudentGroups(Guid studentId, Guid schoolPeriodId, String learnPhase)
+   在 _dynamic_BNDS.IDSP.BaseInfos.Service.CourseGroupService.GetStudentGroups(Object , Object[] )
+   在 Spring.Reflection.Dynamic.SafeMethod.Invoke(Object target, Object[] arguments)
+   在 Spring.Aop.Framework.DynamicMethodInvocation.InvokeJoinpoint()
+   在 Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   在 Spring.Transaction.Interceptor.TransactionInterceptor.Invoke(IMethodInvocation invocation)
+   在 Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   在 BNDS.Runtime.DbLocator.ConnectionStringAdvice.Invoke(IMethodInvocation invocation)
+   在 Spring.Aop.Framework.AbstractMethodInvocation.Proceed()
+   在 Spring.Aop.Framework.DynamicProxy.AdvisedProxy.Invoke(Object proxy, Object target, Type targetType, MethodInfo targetMethod, MethodInfo proxyMethod, Object[] args, IList interceptors)
+   在 CompositionAopProxy_6ea182f5187e4c2c92b08eabc21ccae3.GetStudentGroups(Guid studentId, Guid schoolPeriodId, String learnPhase)
+   在 BNDS.IDSP.WebPortal.Baseinfos.TimeTable.Student1.GetData(Student& student, IEnumerable`1& studentGroups)
+   在 BNDS.IDSP.WebPortal.Baseinfos.TimeTable.Student1.BuildSchedule()
+   
+   
+   2019-04-10 14:20:44
+GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid..ctor(String g)
+   在 BNDS.IDSP.WebPortal.Areas.BaseInfos.Controllers.SelectCourseController.SelectCourse(String CourseIds)
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
+   
+   2019-04-11 11:06:55
+对于“BNDS.IDSP.WebPortal.Areas.api.Controllers.EvalController”中方法“System.Web.Mvc.ActionResult GetSubjectsByGradeIdAndSP(System.Guid, System.Guid, System.String)”的不可以为 null 的类型“System.Guid”的参数“gradeId”，参数字典包含一个 null 项。可选参数必须为引用类型、可以为 null 的类型或声明为可选参数。
+参数名: parameters
+   在 System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   在 System.Web.Mvc.ReflectedActionDescriptor.<>c__DisplayClass1.<Execute>b__0(ParameterInfo parameterInfo)
+   在 System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   在 System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   在 System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
+   
+   
+   2019-04-11 14:57:41
+启用课时规则不能做修改!
+   在 BNDS.IDSP.WebPortal.Areas.BaseInfos.Controllers.ScheduleRuleTGController.BeforePersisit(ScheduleRule entity, ListDictionary propertyList, ElementChangedType changedType)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.FillPropertyData(T entity, ListDictionary propertyList, XElement element)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.SaveSingleElement(XElement element)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUploadData(String xmlString)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUpload()
+ SchoolId:118
+2019-04-11 14:57:46
+全校默认课时规则,“范围名称”“周内时间段”不可修改!
+   在 BNDS.IDSP.WebPortal.Areas.BaseInfos.Controllers.ScheduleRuleTGController.BeforePersisit(ScheduleRule entity, ListDictionary propertyList, ElementChangedType changedType)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.FillPropertyData(T entity, ListDictionary propertyList, XElement element)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.SaveSingleElement(XElement element)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUploadData(String xmlString)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUpload()
+ SchoolId:118
+2019-04-11 14:57:54
+启用课时规则不能做修改!
+   在 BNDS.IDSP.WebPortal.Areas.BaseInfos.Controllers.ScheduleRuleTGController.BeforePersisit(ScheduleRule entity, ListDictionary propertyList, ElementChangedType changedType)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.FillPropertyData(T entity, ListDictionary propertyList, XElement element)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.SaveSingleElement(XElement element)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUploadData(String xmlString)
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetUpload()
+ SchoolId:118
+ 
+ 2019-04-17 09:16:01
+GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid..ctor(String g)
+   在 BNDS.IDSP.Library.Core.Utility.DBUtility.ScalarToGuid(Object scalar)
+   在 BNDS.IDSP.WebPortal.Areas.Eval.Controllers.ProcessEvalDetailTGController.Upload()
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
+   
+   UserName:T17110611
+2019-04-17 17:46:23
+给定关键字不在字典中。
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 BNDS.IDSP.WebPortal.Areas.BaseInfos.Controllers.QTWorkloadController.LoadData()
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetDataData()
+   在 BNDS.Runtime.WebUI.Controllers.BaseTGListController`1.GetData()
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass44.<BeginInvokeSynchronousActionMethod>b__43()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<>c__DisplayClass3b.<BeginInvokeActionMethodWithFilters>b__35()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass51.<InvokeActionMethodFilterAsynchronously>b__4b()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__38(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<>c__DisplayClass2c.<BeginInvokeAction>b__22()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass27.<BeginInvokeAction>b__24(IAsyncResult asyncResult) 
+   
