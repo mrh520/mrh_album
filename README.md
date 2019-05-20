@@ -9,8 +9,8 @@
 # 运行项目
 - 1、git clone git@github.com:mrh520/mrh_album.git
 - 2、cd mrh_album
-- 2、npm install 
-- 3、npm start
+- 3、npm install 
+- 4、npm start
 
 # 项目api接口调用
 如果你想调用接口，可以打开项目中 src/test/jemter/api.mjx文件进行调用。
