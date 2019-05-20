@@ -13,8 +13,8 @@
 - 4、npm start
 
 # 项目api接口调用
-如果你想调用接口，可以打开项目中 src/test/jemter/api.mjx文件进行调用。
-如果你不懂如何使用jemter，请自行百度学习。
+如果你想调用接口，可以打开项目中 src/test/jmeter/api.mjx文件进行调用。
+如果你不懂如何使用jmeter，请自行百度学习。
 # 接口文档
 方法|请求方式|Content-type|功能
 -|-|-|-|
