@@ -16,9 +16,17 @@
 如果你想调用接口，可以打开项目中 src/test/jemter/api.mjx文件进行调用。
 如果你不懂如何使用jemter，请自行百度学习。
 # 接口文档
-方法|请求方式|数据格式|功能
+方法|请求方式|Content-type|功能
 -|-|-|-|
+|/upload|post|multipart/form-data|上传文件
 |/photo|post|application/json|创建图片信息
+|/photo|get|text/plain|获取图片信息列表
+|/photo|put|application/json|修改图片信息
+|/photo?id=1|delete|text/plain|通过id删除图片信息
+|/album|post|application/json|创建相册
+|/album|get|text/plain|获取相册信息列表
+|/album|put|application/json|修改相册信息
+|/album?id=1|delete|text/plain|通过id删除相册
 - 创建图片
 ```javascript 
 Url：http://localhost:3000/photo
