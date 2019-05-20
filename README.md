@@ -83,7 +83,7 @@ Content-Type:application/json
     "message": "success"
 }
 - 上传文件
-```
+```JavaScript
 url：http://localhost:3000/upload
 请求方式：post
 Content-Type：multipart/form-data
