@@ -16,8 +16,8 @@
 如果你想调用接口，可以打开项目中 src/test/jemter/api.mjx文件进行调用。
 如果你不懂如何使用jemter，请自行百度学习。
 # 接口文档
-```javascript
-1、创建图片 
+- 创建图片
+```javascript 
 Url：http://localhost:3000/photo
 请求方式：post
 Content-Type:application/json
@@ -82,4 +82,11 @@ Content-Type:application/json
     },
     "message": "success"
 }
+- 上传文件
 ```
+url：http://localhost:3000/upload
+请求方式：post
+Content-Type：multipart/form-data
+自行选择上传文件
+```
+
