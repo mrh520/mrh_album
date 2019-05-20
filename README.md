@@ -12,6 +12,41 @@
 - 2、npm install 
 - 3、npm start
 
-#项目api接口调用
+# 项目api接口调用
 如果你想调用接口，可以打开项目中 src/test/jemter/api.mjx文件进行调用。
 如果你不懂如何使用jemter，请自行百度学习。
+# 接口文档
+···javascript
+1、创建图片 
+Url：http://localhost:3000/photo
+请求方式：post
+Content-Type:application/json
+数据示例：
+{
+	"name":"test",
+	"description":"图片",
+	"filename":"test.jpg",
+	"views":"1","isPublished":"true",
+	"albums":[{
+		"id":59,
+		"name":"wodeceshi"
+		},
+		{
+		"id":58,
+		"name":"66677788899"
+		}
+		],
+	"author":{
+		"name":"作者"
+		},
+	"photoMetadata":{
+		"comment":"bucuo",
+		"compressed":true,
+		"orientation":"66666",
+		"height":200,
+		"width":200	
+		}
+}
+···
+
+
