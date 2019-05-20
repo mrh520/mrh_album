@@ -47,6 +47,39 @@ Content-Type:application/json
 		"width":200	
 		}
 }
+返回结果：
+{
+    "code": 1,
+    "data": {
+        "albums": [
+            {
+                "name": "我的相册",
+                "id": 59
+            },
+            {
+                "name": "别人的相册",
+                "id": 58
+            }
+        ],
+        "metadata": {
+            "orientation": "66666",
+            "width": 200,
+            "comment": "bucuo",
+            "compressed": true,
+            "id": 7,
+            "height": 200
+        },
+        "filename": "test.jpg",
+        "isPublished": "true",
+        "author": {
+            "name": "作者",
+            "id": 11
+        },
+        "name": "test",
+        "description": "123",
+        "id": 41,
+        "views": "1"
+    },
+    "message": "success"
+}
 ```
-
-
